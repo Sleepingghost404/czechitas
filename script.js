@@ -6,7 +6,7 @@ Jak se změní měsíční příjem divadla pokud víme, že 40 % návštěvník
 Vypište do stránky i příjem divadla se započítanou slevou pro studenty.*/
 
 const listek = 12;
-const navtevnik = 174;
+const navstevnik = 174;
 const divadlo = 15; 
 
 const income = navstevnik * divadlo * listek;
@@ -21,5 +21,7 @@ S použitím vhodných funkcí sestavte výraz, který vygeneruje náhodné cel�
 Zamyslete se nad tím, zda vámi vytvořený výraz generuje všechna čísla skutečně se stejnou pravděpodobností. 
 Vemte v úvahu, že funkce Math.random generuje náhodná čísla mezi 0 (včetně) a 1 (vyjma). 
 Je tedy malinká pravěpodobnost, že občas padne přesně číslo 0. Naopak číslo 1 padnout nemůže./*/
+var randomNum = Math.random()*6 + 1
+var diceThrow = Math.round(randomNum)
 
-console,log(Math.random()*100)
+console.log(diceThrow == 7 ? diceThrow - 1 : diceThrow) //TODO: Hru Hru
